@@ -49,30 +49,28 @@
     // 验证码倒计时使用
     
     var codeView = MyPrivateTimer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.white
+
         let btn = UIButton.init(frame: CGRect.init(x: 100, y: 100, width: 120, height: 35))
         self.view.addSubview(btn)
         btn.setTitle("获取验证码", for: .normal)
         btn.backgroundColor = UIColor.init(hexString: "e3e2e0")
         btn.setTitleColor(UIColor.red, for: .normal)
         btn.layer.cornerRadius = 5
-        
-        // 自定义倒计时时间
-        
+        // 自定义倒计时时间
         codeView.timeCode = 50
-        
         codeView.codeBtn = btn
-        
         btn.addTarget(self, action: #selector(self.timeDown), for: .touchUpInside)
     
     }
- 
- 
-    @objc fileprivate func timeDown() { 
-        // 调用定时器的方法
+    
+    @objc fileprivate func timeDown() {
         
+        // 调用定时器的方法
         codeView.isRestTime = true
         
     }
