@@ -16,7 +16,7 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
     var pageControl = UIPageControl()
     var startBtn = UIButton()
     var timeBtn = UIButton()
-    var timeCode = 6
+    var timeCode = NSInteger()
     var timer: Timer?      //刷新时器
     
     override func viewDidLoad() {
@@ -94,7 +94,6 @@ extension GuideViewController {
                 selector: #selector(self.update),
                 userInfo: nil,
                 repeats: true)
-            timeCode = 6
         }
         
     }
@@ -114,8 +113,8 @@ extension GuideViewController {
     
     @objc fileprivate func update() {
     
-        timeCode -= 1
         timeBtn.setTitle("\(timeCode) 秒", for: .normal)
+        timeCode -= 1
         if timeCode == 0 {
             self.jumpToHomeVC()
             self.stopTimer()

@@ -10,7 +10,7 @@ import UIKit
 
 class MyPrivateTimer {
 
-    var timeCode = 60
+    var timeCode = NSInteger()
     
     //定义一个私有定时器变量
     private var timer: Timer?

@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         btn.backgroundColor = UIColor.init(hexString: "e3e2e0")
         btn.setTitleColor(UIColor.red, for: .normal)
         btn.layer.cornerRadius = 5
+        codeView.timeCode = 50
         codeView.codeBtn = btn
         btn.addTarget(self, action: #selector(self.timeDown), for: .touchUpInside)
     
@@ -46,8 +47,10 @@ class ViewController: UIViewController {
     func setupGudienceView() {
     
         let vc = GuideViewController()
+        // 引导页image数组
         vc.imgArr = ["yindao_1","yindao_2","yindao_3","yindao_4"]
-    
+        // 引导页倒计时
+        vc.timeCode = 10
         vc.modalTransitionStyle = .coverVertical
         
         let keyRootView = UIApplication.shared.keyWindow?.rootViewController
