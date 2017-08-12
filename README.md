@@ -58,12 +58,17 @@
         btn.backgroundColor = UIColor.init(hexString: "e3e2e0")
         btn.setTitleColor(UIColor.red, for: .normal)
         btn.layer.cornerRadius = 5
+        
         // 自定义倒计时时间
+        
         codeView.timeCode = 50
+        
         codeView.codeBtn = btn
+        
         btn.addTarget(self, action: #selector(self.timeDown), for: .touchUpInside)
     
     }
+ 
  
     @objc fileprivate func timeDown() { 
         // 调用定时器的方法
