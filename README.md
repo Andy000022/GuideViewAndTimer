@@ -29,8 +29,8 @@
     }
     
     // 引导页设置
-    func setupGudienceView() {
     
+    func setupGudienceView() {
         let vc = GuideViewController()
         // 引导页image数组
         vc.imgArr = ["yindao_1","yindao_2","yindao_3","yindao_4"]
