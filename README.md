@@ -13,11 +13,15 @@
         self.title = "引导页"
         
         self.view.backgroundColor = UIColor.white
+        
         // 判断是否第一次启动
+        
         if !defaults.bool(forKey: "first") {
             
             defaults.set(true, forKey: "first")
+            
             // 引导页
+            
             setupGudienceView()
             
         }
