@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'GuidenceAndTimer' do
+  use_frameworks!
+
+    pod 'ColorExtension'
+
+end
