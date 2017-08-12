@@ -3,8 +3,9 @@
 
 
     //引导页使用
+    
     let defaults = UserDefaults.standard
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -14,23 +15,18 @@
         
         self.view.backgroundColor = UIColor.white
         
-        // 判断是否第一次启动
-        
-        if !defaults.bool(forKey: "first") {
+        if !defaults.bool(forKey: "first") {
             
             defaults.set(true, forKey: "first")
             
-            // 引导页
-            
-            setupGudienceView()
+            setupGudienceView()
             
         }
-    
+        
     }
-    
-    // 引导页设置
     
-    func setupGudienceView() {
+    func setupGudienceView() {
+    
         let vc = GuideViewController()
         // 引导页image数组
         vc.imgArr = ["yindao_1","yindao_2","yindao_3","yindao_4"]
@@ -46,7 +42,10 @@
                 
             }
         }
+        
+
     }
+
     
     
     
