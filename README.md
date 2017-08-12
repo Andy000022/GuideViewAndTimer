@@ -49,7 +49,6 @@
     // 验证码倒计时使用
     
     var codeView = MyPrivateTimer()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,10 +64,8 @@
         btn.addTarget(self, action: #selector(self.timeDown), for: .touchUpInside)
     
     }
-    
-    
-    @objc fileprivate func timeDown() {
-        
+ 
+    @objc fileprivate func timeDown() { 
         // 调用定时器的方法
         codeView.isRestTime = true
         
