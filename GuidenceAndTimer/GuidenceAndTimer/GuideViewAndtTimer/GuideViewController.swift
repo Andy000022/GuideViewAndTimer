@@ -10,8 +10,6 @@ import UIKit
 
 class GuideViewController: UIViewController, UIScrollViewDelegate {
 
-    let kWidth = UIScreen.main.bounds.width
-    let kHeight = UIScreen.main.bounds.height
     var imgArr:[String] = [""]
     var pageControl = UIPageControl()
     var startBtn = UIButton()
@@ -44,7 +42,7 @@ extension GuideViewController {
         scroll.contentSize = CGSize.init(width: kWidth*CGFloat(imgArr.count), height: kHeight)
         self.view.addSubview(scroll)
         
-        startBtn = UIButton.init(frame: CGRect.init(x: kWidth * 0.3, y: kHeight * 0.8, width: kWidth*0.4, height: 40))
+        startBtn = UIButton.init(frame: CGRect.init(x: kWidth * 0.3, y: iPhoneX ? kHeight * 0.85 : kHeight * 0.8, width: kWidth*0.4, height: 40))
         startBtn.setTitle("立即体验", for: .normal)
         startBtn.setTitleColor(UIColor.black, for: .normal)
         startBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
@@ -61,7 +59,7 @@ extension GuideViewController {
             scroll.addSubview(img)
         }
         
-        pageControl = UIPageControl.init(frame: CGRect.init(x: (kWidth - 120)/2, y: kHeight * 0.8 + 20, width: 120, height: 20))
+        pageControl = UIPageControl.init(frame: CGRect.init(x: (kWidth - 120)/2, y: iPhoneX ? (kHeight * 0.85 + 20) : (kHeight * 0.8 + 20), width: 120, height: 20))
         pageControl.currentPage = 0
         pageControl.numberOfPages = imgArr.count
         pageControl.currentPageIndicatorTintColor = UIColor.lightGray
@@ -69,7 +67,7 @@ extension GuideViewController {
         pageControl.pageIndicatorTintColor = UIColor.white
         self.view.insertSubview(pageControl, aboveSubview: scroll)
         
-        timeBtn = UIButton.init(frame: CGRect.init(x: kWidth - 60, y: 30, width: 40, height: 20))
+        timeBtn = UIButton.init(frame: CGRect.init(x: kWidth - 60, y: iPhoneX ? kNaviH : 30, width: 40, height: 20))
         timeBtn.backgroundColor = UIColor.white
         timeBtn.layer.cornerRadius = 5
         timeBtn.titleLabel?.font = UIFont.systemFont(ofSize: 12)

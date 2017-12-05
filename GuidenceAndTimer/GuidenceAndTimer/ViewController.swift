@@ -31,8 +31,7 @@ class ViewController: UIViewController {
             
         }
         
-        
-        let btn = UIButton.init(frame: CGRect.init(x: 100, y: 100, width: 120, height: 35))
+        let btn = UIButton.init(frame: CGRect.init(x: (kWidth - 120)/2, y: viewFrameY + 50, width: 120, height: 35))
         self.view.addSubview(btn)
         btn.setTitle("获取验证码", for: .normal)
         btn.backgroundColor = UIColor.init(hexString: "e3e2e0")

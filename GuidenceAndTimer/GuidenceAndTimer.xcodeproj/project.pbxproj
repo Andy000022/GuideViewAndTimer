@@ -15,6 +15,7 @@
 		168309291F3DFA2B00405077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168309271F3DFA2B00405077 /* LaunchScreen.storyboard */; };
 		168309351F3DFB7D00405077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168309341F3DFB7D00405077 /* ViewController.swift */; };
 		3CD2E47897E12E688111C070 /* Pods_GuidenceAndTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB56960BAAD49F7A4651D69 /* Pods_GuidenceAndTimer.framework */; };
+		D55F4EF61FD62CBE0058FF3C /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55F4EF51FD62CBE0058FF3C /* Commons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		168309341F3DFB7D00405077 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EB68F8F247380DCE5FB38F5 /* Pods-GuidenceAndTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuidenceAndTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuidenceAndTimer/Pods-GuidenceAndTimer.release.xcconfig"; sourceTree = "<group>"; };
 		ADB56960BAAD49F7A4651D69 /* Pods_GuidenceAndTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuidenceAndTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55F4EF51FD62CBE0058FF3C /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		F0F47D4CC2D030475D50A306 /* Pods-GuidenceAndTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuidenceAndTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuidenceAndTimer/Pods-GuidenceAndTimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +51,7 @@
 			children = (
 				164843621F3EB742003AFE25 /* GuideViewController.swift */,
 				164843631F3EB742003AFE25 /* MyPrivateTimer.swift */,
+				D55F4EF51FD62CBE0058FF3C /* Commons.swift */,
 			);
 			path = GuideViewAndtTimer;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				168309351F3DFB7D00405077 /* ViewController.swift in Sources */,
 				164843651F3EB742003AFE25 /* MyPrivateTimer.swift in Sources */,
+				D55F4EF61FD62CBE0058FF3C /* Commons.swift in Sources */,
 				1683091F1F3DFA2B00405077 /* AppDelegate.swift in Sources */,
 				164843641F3EB742003AFE25 /* GuideViewController.swift in Sources */,
 			);
